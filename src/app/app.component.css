@@ -1,0 +1,37 @@
+table  {
+    width: 20%;
+    border: 1px solid black;
+    margin-top: 0px;
+  }
+
+td{
+    border: 1px solid black;
+}
+.centeralign{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lalig{
+    text-align: left;
+}
+p{
+    text-align: left;
+}
+.redr{
+    background-color: red;
+}
+
+.bl{
+    background-color: blue;
+}
+
+.gre{
+    background-color: grey;
+    border-radius:  50px;
+}
+
+.pur{
+    background-color: palevioletred;
+    border-radius:  50px;
+}
