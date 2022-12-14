@@ -9,19 +9,30 @@ export class ControllerfuncService {
   row!: number;
   pi !: number;
   pj !:number;
+  fl : number=0;
   points !:number;
   rdnum !:number;
+  public blk1 : boolean = false;
+  public blk2 : boolean = true;
   //valarray !:number[];
   
-  onfun(pi:number,pj:number,rd : number,r :number,p : number){
+  onfun(pi:number,pj:number,rd : number,r :number,p : number,pid : number){
     //onfun(pi:number,pj: number,r :number,p : number){
     // console.log("pi"+pi);
     // console.log("pj"+pj);
     this.row=r;
     this.points=p;
     this.rdnum=rd;
+    if(pi==0 && (pj-rd)<0){
+      this.fl=1;
+      //return;
+    }
+    else{
     for (let i = 0; i < rd; i++) {
       //console.log ("Block statement execution no." + i);
+      // if(pi==0 && pj==0){
+      //   break;
+      // }
       if(this.row%2!=0 && pj<=this.b){
         pj=pj+1;
         //console.log("iteration "+this.pj);
@@ -61,6 +72,7 @@ export class ControllerfuncService {
       console.log("Iteration :"+i);
       console.log(pi);
       console.log(pj);
+    }
       //console.log(r);
     }
     //this.valarray.push(pi);

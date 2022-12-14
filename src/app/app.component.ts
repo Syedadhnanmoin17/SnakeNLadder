@@ -16,13 +16,20 @@ export class AppComponent implements OnInit{
   r : number = 1;
   b : number = 9;
   public mess !: number;
+  // public newarr:boolean[] = [false,true];
   public messtwo !: number;
   public ptwoone !: number;
   public ptwotwo !: number;
+  public disone : boolean=false;
+  public distwo : boolean=true;
+
   // console.log(mess);
   // console.log(messtwo);
   
-  
+  tryfun(arr : boolean[]){
+      this.disone=arr[0];
+      this.disone=arr[1];
+  }
   //val : number = 0;
   /*board : string[][] =[['0','0','0','0','0', '0','0', '0','0', '0'],
   ['0','0','0','0','0', '0','0', '0','0', '0'],

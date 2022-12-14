@@ -1,4 +1,5 @@
-<h1>Player 2</h1>
-<button (click)="onPlay()">Play</button>
-<h2>Player 2 Points:{{pnts}}</h2>
-<h3>Dice Value:{{crand}}</h3>
+<h2>Player 2</h2>
+
+<h4>Player 2 Points:{{pnts}}</h4>
+<h5>Dice Value:{{crand}}</h5>
+<button class="color_value" (click)="onPlay()" [disabled]="isblk()">Play</button>

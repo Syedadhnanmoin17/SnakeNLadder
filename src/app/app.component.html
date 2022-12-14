@@ -1,16 +1,35 @@
+<h2>Snake and Ladder</h2>
+<div class="container">
 
- 
-<div class="container d-flex justify-content-center">
-  <app-player1 (valEve)="mess=$event" (valEvetwo)="messtwo=$event"></app-player1>
-<table class="table table-striped center">
-  <tr *ngFor="let row of arr">
-    <td *ngFor="let item of row"  [class.redr]="snakecheck(item)" [class.bl]="laddercheck(item)"  [class.gre]="playercheckone(item)" [class.pur]="playerchecktwo(item)">
-      <small>{{item}}</small>
-    </td>
-  </tr>
-</table>
-<app-player2 (valEve)="ptwoone=$event" (valEvetwo)="ptwotwo=$event"></app-player2>
+  <div class="col-sm">
+    <div class=" table align_table">
+      <table >
+        <tr *ngFor="let row of arr">
+          <td *ngFor="let item of row"  [class.redr]="snakecheck(item)" [class.bl]="laddercheck(item)"  [class.gre]="playercheckone(item)" [class.pur]="playerchecktwo(item)" class="tdivs">
+          <small>{{item}}</small>
+          </td>
+        </tr>
+      </table> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <div class="align-player">
+        <app-player1 (valEve)="mess=$event" (valEvetwo)="messtwo=$event" ></app-player1>
+      </div>
+      <div class="align-player1">
+        <app-player2 (valEve)="ptwoone=$event" (valEvetwo)="ptwotwo=$event"></app-player2>
+     
+      </div>
+    </div>
+<!--<div class="container d-flex justify-content-center">-->
+
+  <!-- <div class="col-sm"> -->
+    
+  <!-- </div> -->
 </div>
+</div>
+
 <!-- {{mess}}
 {{messtwo}} -->
 
